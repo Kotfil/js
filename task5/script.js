@@ -21,4 +21,7 @@ switch(num){
 		case 50:
 			console.log('Верно');
 			break;
-}
+default:
+	console.log("что-то пошло не так");
+	break;
+		}
