@@ -21,23 +21,31 @@ let appData = {
     optionalExpenses: {},
     income: [],
     savings: true
+    chooseExpenses: function(){
+        for (let i = 0; i < 2; i++) {
+            let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
+                b = prompt("Во сколько обойдется?", "");
+
+            if (typeof (a) === 'string' && typeof (a) != null && typeof (b) != null && a != "" && b != "" && a.length < 50) {
+                appData.expenses[a] = b;
+            } else {
+                i = i - 1;
+            }
+
+        }
+    },
+    detectDayBudget: function(){
+        appData.moneyPerDay = (appData.budget / 30).toFixed();
+        alert("Бюджет на 1 день составляет " + appData.moneyPerDay + "руб.");
+    },
+    detectLevel: function(){
+        
+    }
+
 };
 
 
-function chooseExpenses() {
-    for (let i = 0; i < 2; i++) {
-        let a = prompt ("Введите обязательную статью расходов в этом месяце", ""),
-            b = prompt ("Во сколько обойдется?", "");
-    
-        if ( typeof(a)==='string' && typeof(a) != null && typeof(b) != null && a != "" && b != "" && a.length < 50) {
-            appData.expenses[a] = b;
-        } else {
-            i--;
-        }
-    
-    };
-}
-chooseExpenses();
+
 
 
 function detectDayBudget() {                                            // Расчет дневного бюджета
