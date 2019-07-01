@@ -4,10 +4,6 @@ circle = document.getElementsByClassName('circle');
 heart = document.querySelectorAll('.wapper .heart');
 oneHeart = document.querySelector('.heart');
 
-console.log(box);
-console.log(btn);
-console.log(btn[0]);
-console.log(circle[2]);
-console.log(heart[1]);
-console.log(oneHeart);
- ..
+
+box.style.backgroundColor = 'blue';
+btn[1].style.borderRadius = '100%';
