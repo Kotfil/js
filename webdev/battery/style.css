@@ -73,5 +73,16 @@
     line-height: 92px;
 }
 #battery-level.battery-animation {
-    animation: 
+    animation-name: battery-charget;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes battery-charget{
+    0% {
+        width: 20%;
+    }
+100%{
+    width: 100%;
+}
 }
