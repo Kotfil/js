@@ -5,6 +5,16 @@
 // //undefined
 // let a;
 // console.log(a);
+<<<<<<< HEAD
+
+// //массивы
+// const obj = {
+// 		name:'Alex'
+// }
+// 				0 1 2 3 
+// const arr = [1, 3, 5, 6,];
+
+=======
 
 // //массивы
 // const obj = {
@@ -54,3 +64,4 @@ console.log(typeof(Boolean('5')));
 // 3)
 
 console.log(typeof(!!'5'));
+>>>>>>> b695ca4494feb82a84dd04f809329e27d37b9e58
