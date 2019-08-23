@@ -13,7 +13,7 @@ inputElement.addEventListener('keydown', event => {
     if (event.key === 'Enter' || event.keyCode === 13) {
         todoList.unshift({
 			content:inputElement.value
-			done: false
+			done: false //123
 		})
         inputElement.value = ''
 		
