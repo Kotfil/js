@@ -46,4 +46,10 @@ function upgradeView() {
       buttonDoneElement.type = 'button'
       buttonDoneElement.className = 'btn btn-outline-primary'
       buttonDoneElement.innerText = 'Done'
+
+      const buttonRemoveElement = document.createElement('button')
+      divElement.append(buttonRemoveElement)
+      buttonRemoveElement.type = 'button'
+      buttonRemoveElement.className = 'btn btn-outline-danger'
+      buttonRemoveElement.innerText = 'Remove'
 }
