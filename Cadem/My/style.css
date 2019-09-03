@@ -1,0 +1,40 @@
+body{
+  background-color: #4A706F;
+}
+
+ul {
+  display: grid;
+  width: 200px;
+  height: 340px;
+  margin-left: calc(50vw - 100px);
+  margin-top: 50px;
+  grid-template-rows: 75px 5px 2fr 30px 1fr 10px 1fr 10px 1fr 55px 5px 2fr 30px 1fr 10px 1fr 10px 1fr 40px 40px 20px;
+  transition: width .3s, height .3s, margin .3s;
+}
+
+ul:hover {
+  height: 600px;
+}
+
+li {
+  grid-column: 1;
+}
+
+img {
+  width: 100%;
+}
+
+.topBun { grid-row: 1; z-index: 11; }
+.topCheese { grid-row: 3/11; z-index: 10; }
+.topBurger { grid-row: 4/5; z-index: 9; }
+.topTomatoes { grid-row: 6/7; z-index: 8; }
+.topLettuce { grid-row: 8/9; z-index: 7; }
+.middleBun { grid-row: 10/11; z-index: 6; }
+.bottomCheese { grid-row: 11/20; z-index: 5; }
+.bottomBurger { grid-row: 13/14; z-index: 4; }
+.onions { grid-row: 15/16; z-index: 3; }
+.bottomLettuce { grid-row: 17/18; z-index: 2; }
+.bottomBun { grid-row: 19/20; z-index: 1; }
+.topCheese > img{ height: 100% }
+.bottomCheese > img{ height: 100% }
+.more { grid-column: 21; grid-row: 1/-1; text-align: center; font-size: 0.8em; }
