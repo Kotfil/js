@@ -1,8 +1,10 @@
 'use strict'
 
-let arr = [1,2,3,4,5];
+let arr = [1,2,23,442,1234],
+  i = arr.sort(compareNum);
 
-for (let i = 0; i < arr.length; i++){
-  let
-  console.log(arr[i]);
-}
+  function compareNum(a,b){
+    return a-b;
+  }
+
+console.log(arr);
