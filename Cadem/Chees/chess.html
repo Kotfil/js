@@ -8,11 +8,12 @@
     </div>
     <script>
       var map = Array ();
+      var inf = Array ();
       function init_map()
       {
 
         map =
-        [
+        [ //y0 y1 y2    y3   y4    y5   y6   y7
         ["R", "P", " ", " ", " ", " ", "p", "r"], // x = 0
         ["N", "P", " ", " ", " ", " ", "p", "n"], // x = 1
         ["B", "P", " ", " ", " ", " ", "p", "b"], // x = 2
@@ -20,8 +21,22 @@
         ["K", "P", " ", " ", " ", " ", "p", "k"], // x = 4
         ["B", "P", " ", " ", " ", " ", "p", "b"],  // x = 5
         ["N", "P", " ", " ", " ", " ", "p", "n"], // x = 6
-        ["R", "P", " ", " ", " ", " ", "p", "r"]  // x = 1
+        ["R", "P", " ", " ", " ", " ", "p", "r"]  // x = 7
         ];
+      }
+      function init_inf()
+      {
+        inf =
+        [
+        [" ", " ", " ", " ", " ", " ", " ", " ",],
+        [" ", " ", " ", " ", " ", " ", " ", " ",],
+        [" ", " ", " ", " ", " ", " ", " ", " ",],
+        [" ", " ", " ", " ", " ", " ", " ", " ",],
+        [" ", "1", "2", "2", " ", " ", " ", " ",],
+        [" ", " ", " ", " ", " ", " ", " ", " ",],
+        [" ", " ", " ", " ", " ", " ", " ", " ",],
+        [" ", " ", " ", " ", " ", " ", " ", " ",]
+      ];
       }
       function figure_to_html (figure)
       {
@@ -50,7 +65,10 @@
         html += "<td>&nbsp;" + y + "&nbsp;</td>";
         for (var x = 0; x <= 7; x ++)
         {
+                if (inf [x] [y] == " ")
                 color = (x + y) % 2 ? "#eeffee" : "#abcdef";
+                else
+                color = inf [x] [y] == "1" ? "#aaffaa" : "ffaaaa";
                 html += "<td style = 'height: 50; width: 50; " +
                   "background-color: " + color + "; " +
                   "text-align: center; " +
@@ -70,5 +88,6 @@
       document.getElementById ('board').innerHTML = html;
     }
     init_map();
+    init_inf();
     show_map();
     </script>
