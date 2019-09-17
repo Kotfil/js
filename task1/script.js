@@ -1,28 +1,63 @@
-'use strict'
+'use strict';
 
+a = 5;
+console.log(a);
 
-var number = 5;
-var string = "Hello!";
+var number =5;
+var string = "Hello";
 var sym = Symbol();
 var boolean = true;
 null;
 undefined;
 var obj = {};
 
-console.log(4/0);
-console.log ('string'*9);
+console.log (4/0);
+console.log ('string' *9);
 
-let something
-console.log(something)
+let something;
+console.log (something)
 
-let persone = {
-    name: "John", 
-    age: 25,
+let Leningradka ={
+    diser: "Malecha",
+    age: 23,
     isMarried: false
 };
 
-console.log(persone["name"]);
+console.log (Leningradka["diser"],["age"]);
 
-let arr = ['plum.png','orange.jpg','apple.bmp'];
 
-console.log(arr[0])
+let Sosedi = ['sssr.png','dasha.jpg','grywa.bmp'];
+console.log(Sosedi[2]);
+
+
+//alert("Love Vikimiki");
+
+// let answer = confirm("Do you love?");
+
+// console.log (answer);
+
+//let answer = +prompt("Есть ли вам 20 молодой человек?", "Да");
+
+// console.log (typeof(answer));
+
+// console.log ("sosed" + " - object");
+// console.log (4 + +" - object");
+
+let incr = 10,
+    decr = 10;
+
+   
+    console.log(decr--),
+    console.log(incr++);
+
+    console.log (5%2);
+
+    console.log("2" == 2);
+
+
+    let 
+        isMom = false,
+        isBabs = false;
+    
+   console.log(!isMom || isBabs);
+      
