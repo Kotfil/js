@@ -79,5 +79,67 @@
 // // alert(a);
 // let a = 2 * 8 / 4;
 // alert(a);
-let a = (2 * 8) / 4;
-alert(a);
+// let a = (2 * 8) / 4;
+// alert(a);
+// let a = 2 * (8 / 4);
+// alert(a);
+// let a = 1.5;
+// let b = 0.75;
+// alert(a+b);
+// let a = 100;
+// alert(-a);
+// let a = 50;
+// let c = +a;
+// alert(c);
+// let a = 10;
+// let b = 3;
+// alert(a%b);
+//
+// let a  = 2;
+// let b = 10;
+// alert(a**b);
+// let a = 3 * 2 ** 3;
+// // // alert(a);
+// let str = 'abc';
+// alert(str);
+// let str = 'abc' + 'def'; // складываем две строки
+// alert(str);
+//
+// let str = 'abc';
+// // alert(str + ' ' + 'def');
+
+// let str;
+// str = '!!!';
+// alert(str)
+// let a = 'java';
+// let b = 'script';
+// alert (a + '' + b)
+// let a = 'hello';
+// let b = 'world';
+// alert (a + ' ' + b)
+// let name = 'Filipp';
+// // // alert('Hello ' + name)
+// let age = 27;
+// alert('Мне '+ age + ' лет')
+// let str = 'abcde';
+// // alert(str.length);
+// let a;
+// alert(a);
+// let a = false;
+// // alert(a);
+// alert('abc' * 3);
+// let a = 'kkk';
+// let b = 'lll';
+// alert(a*b);
+// alert(10 / 0);
+// alert(((60 * 60) * 24) * 366);
+
+// let a = 360;
+// // let c = a;
+// // alert(c);
+function func(num1, num2, num3) {
+    return num1 + num2 + num3;
+}
+let arr = [1, 2, 3];
+func(...arr);
+console.log(arr);
