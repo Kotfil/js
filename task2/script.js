@@ -1,33 +1,30 @@
-'use strict'
 
-
-<<<<<<< HEAD
-var number = 5;
-var string = "Hello!";
-var sym = Symbol();
-var boolean = true;
-null;
-undefined;
-var obj = {};
-
-console.log(4/0);
-console.log ('string'*9);
-
-let something
-console.log(something)
-
-let persone = {
-    name: "John", 
-    age: 25,
-    isMarried: false
-};
-
-console.log(persone["name"]);
-
-let arr = ['plum.png','orange.jpg','apple.bmp'];
-
-console.log(arr[0])
-=======
+// var number = 5;
+// var string = "Hello!";
+// var sym = Symbol();
+// var boolean = true;
+// null;
+// undefined;
+// var obj = {};
+//
+// console.log(4/0);
+// console.log ('string'*9);
+//
+// let something
+// console.log(something)
+//
+// let persone = {
+//     name: "John",
+//     age: 25,
+//     isMarried: false
+// };
+//
+// console.log(persone["name"]);
+//
+// let arr = ['plum.png','orange.jpg','apple.bmp'];
+//
+// console.log(arr[0])
+// =======
 //var number = 5;
 //var string = "Hello!";
 //var sym = Symbol();
@@ -65,13 +62,36 @@ console.log(arr[0])
 
 //console.log("arr" + " - object");
 //console.log(4 + + " - object");
+//
+// let incr = 10,
+//     decr = 10;
+//
+//     incr++;
+//     decr--;
+//
+//     console.log(incr);
+//     console.long(decr);
+// >>>>>>> f6d5a8f3f9cc2c6103df0b258bc21b69e0040b20
 
-let incr = 10,
-    decr = 10;
+let name = 'Fil';
+console.log(name);
+let secondName = name;
+console.log(secondName);
+name = 'Vika'
+console.log(secondName);
 
-    incr++;
-    decr--;
+let person = {
+    age: 28,
+    name: 'FIl',
+    hobbies: ['Sports','Cooking']
+};
 
-    console.log(incr);
-    console.long(decr);
->>>>>>> f6d5a8f3f9cc2c6103df0b258bc21b69e0040b20
+console.log(person);
+let secondPerson = person;
+console.log(secondPerson);
+person.name = 'VIktoria';
+console.log(secondPerson)
+
+
+
+
